@@ -1,0 +1,117 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.my-header {
+  position: sticky;
+  top: 0;
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  z-index: 100;
+}
+
+.my-header nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.my-header nav a:hover {
+  color: yellow;
+}
+
+.hero {
+  position: relative; 
+  background-color: #e0e0e0;
+  height: 300px;
+  padding-top: 50px;
+}
+
+.order-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 40%;
+  z-index: 10;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.order-btn:hover {
+  background-color: darkgreen;
+}
+
+.drinks-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.drink {
+  width: 30%;
+  border: 1px solid black;
+  padding: 10px;
+}
+.drink img {
+  width: 100%;
+  height: 150px;
+}
+
+.newsletter {
+  background-color: lightgray;
+  padding: 30px;
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+footer a {
+  color: lightblue;
+}
+
+@media (max-width: 900px) {
+  .drink {
+    width: 45%; 
+  }
+
+  .order-btn {
+    right: 35%; 
+  }
+}
+
+@media (max-width: 600px) {
+
+  .drinks-container {
+    display: block;
+  }
+
+  .drink {
+    width: 90%;
+    margin: 10px auto; 
+  }
+
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .order-btn {
+    right: 30%;
+    font-size: 15px;
+  }
+}
